@@ -25,7 +25,7 @@ class Warmup1Test {
         assertTrue(warmup1.nearHundred(90));
         assertFalse(warmup1.nearHundred(89));
         assertTrue(warmup1.nearHundred(200));
-        assertFalse(warmup1.nearHundred(210));
+        assertFalse(warmup1.nearHundred(211));
 
     }
 
@@ -40,13 +40,13 @@ class Warmup1Test {
     void testSumDouble(){
         assertEquals(3, warmup1.sumDouble(1,2));
         assertEquals(5, warmup1.sumDouble(2,3));
-        assertEquals(8, warmup1.sumDouble(4,4));
+        assertEquals(16, warmup1.sumDouble(4,4));
     }
 
     @Test
     void testDiff21(){
         assertEquals(2, warmup1.diff21(19));
         assertEquals(0, warmup1.diff21(21));
-        assertEquals(4, warmup1.diff21(25));
+        assertEquals(8, warmup1.diff21(25));
     }
 }
